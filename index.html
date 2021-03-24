@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="../CenturyBizTakeHome/Style Sheets/dashboard.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body id="body-pd">
+        <!-- Top Nav -->
+        <header class="navbar sticky-top flex-md-nowrap">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center">
+                <div class="col-2 text-center">
+                    <a class="navbar-brand" href="#">
+                        <img width="50" height="50" src="../CenturyBizTakeHome/Century Business Take Home/CompanyLogo.png">
+                    </a>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-6 brand-text-right">
+                            <span id="brand-nav-tag" class="navbar-text demi-text-large col-4">
+                                ABC Manufacturing
+                            </span>
+                        </div>
+                        <div class="col-6" id="navbarNavDropdown">
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle demi-text" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Rebecca Smith
+                                </a>
+                                <span class="demi-text-small logout">logout</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="container-fluid">
+            <div class="row main">
+                <div id="side-bar-header" class="col-2 no-pad">
+                    <nav id="sidebarMenu" class="d-md-block sidebar">
+                        <div class="position-sticky pt-3">
+                            <div class="sidebar-hamburger" id="navbar-toggler">
+                                <img src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/Hamburger.png" alt="" width="20" height="10">
+                            </div>
+                            <ul class="nav flex-column pt-1">
+                                <li class="nav-item text-left pt-3 pb-3">
+                                    <a class="nav-link text-white" aria-current="page" href="#">
+                                        <img src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/SelectnPay.png" width="20" height="20">
+                                    </a>
+                                    <span class="nav-item-text">Select & Pay</span>
+                                </li>
+                                <li class="nav-item text-left pt-3 pb-3">
+                                    <a class="nav-link text-white" aria-current="page" href="#">
+                                        <img src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/QuickPayments.png" width="20" height="20">
+                                    </a>
+                                    <span class="nav-item-text">Quick Payment</span>
+                                </li>
+                                <li class="nav-item text-left pt-3 pb-3">
+                                    <a class="nav-link text-white" aria-current="page" href="#">
+                                        <img src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/AutoPayments.png" width="20" height="20">
+                                    </a>
+                                    <span class="nav-item-text">Auto Payment</span>
+                                </li>
+                                <li class="nav-item text-left pt-3 pb-3">
+                                    <a class="nav-link text-white" aria-current="page" href="#">
+                                        <img src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/SelectnPay.png" width="20" height="20">
+                                    </a>
+                                    <span class="nav-item-text">Reports</span>
+                                </li>
+                                <li class="nav-item text-left pt-3 pb-3">
+                                    <a class="nav-link text-white" aria-current="page" href="#">
+                                        <img id=""src="../CenturyBizTakeHome/Century Business Take Home/Navigation Icons/MyAccount.png" width="20" height="20">
+                                    </a>
+                                    <span class="nav-item-text">My Account</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div id="main-body" class="col-10 no-pad">
+                    <main class="ms-sm-auto px-md-4 bg-light-2">
+                        <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                                <div class=""></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center p-3">
+                            <h3>Welcome back, Rebecca. Here is a summary of your account.</h3>
+                        </div>
+                        <div class="container-fluid container-no-pad pb-3">
+                            <div class="row">
+                                <div class="col-sm p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="../CenturyBizTakeHome/Century Business Take Home/Dashboard Card Icons/AmountDue.png" width="30" height="30">
+                                            <h3 class="card-title text-muted" style="padding-top: .50rem;">4120.23</h3>
+                                            <p class="card-text">Total Amount due.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="../CenturyBizTakeHome/Century Business Take Home/Dashboard Card Icons/Invoices.png" width="30" height="30">
+                                            <h3 class="card-title text-muted" style="padding-top: .50rem;">13</h3>
+                                            <p class="card-text">Open Invoices</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="../CenturyBizTakeHome/Century Business Take Home/Dashboard Card Icons/SalesOrders.png" width="30" height="30">
+                                            <h3 class="card-title text-muted" style="padding-top: .50rem;">2</h3>
+                                            <p class="card-text">Open Sales Orders</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="../CenturyBizTakeHome/Century Business Take Home/Dashboard Card Icons/Credits.png" width="30" height="30">
+                                            <h3 class="card-title text-muted" style="padding-top: .50rem;">0.00</h3>
+                                            <p class="card-text">Total Credits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="../CenturyBizTakeHome/Century Business Take Home/Dashboard Card Icons/AutoPay.png" width="30" height="30">
+                                            <h3 class="card-title text-muted" style="padding-top: .50rem;">On</h3>
+                                            <p class="card-text">Autopay</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="step-one" class="container-fluid rectangle-2 pt-3 pb-3">
+                            <div class="row pb-3 justify-content-center" style="width:100%">
+                                <div class="col-12">
+                                    <img src="../CenturyBizTakeHome/Century Business Take Home/Step1.png" width="20" height="20">
+                                    <span class="step-padding">Select invoices to pay.</span>
+                                    <div class="container-fluid rectangle-grey pt-3 step-margin"></div>
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-striped table-bordered table-hover table-condensed step-margin">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Invoice #</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Invoice total</th>
+                                                    <th scope="col">Amount Due</th>
+                                                    <th scope="col">Terms</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">PO #</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table-striped">
+                                                <tr>
+                                                    <td scope="row">12382998</td>
+                                                    <td>10/30/18</td>
+                                                    <td>10/30/18</td>
+                                                    <td>$100.00</td>
+                                                    <td>$100.00</td>
+                                                    <td>Discount $100 if paid by 05/02/2020</td>
+                                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                                    <td>232942</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">12382998</td>
+                                                    <td>10/30/18</td>
+                                                    <td>10/30/18</td>
+                                                    <td>$100.00</td>
+                                                    <td>$100.00</td>
+                                                    <td>Discount $100 if paid by 05/02/2020</td>
+                                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                                    <td>232942</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">12382998</td>
+                                                    <td>10/30/18</td>
+                                                    <td>10/30/18</td>
+                                                    <td>$100.00</td>
+                                                    <td>$100.00</td>
+                                                    <td>Discount $100 if paid by 05/02/2020</td>
+                                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                                    <td>232942</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">12382998</td>
+                                                    <td>10/30/18</td>
+                                                    <td>10/30/18</td>
+                                                    <td>$100.00</td>
+                                                    <td>$100.00</td>
+                                                    <td>Discount $100 if paid by 05/02/2020</td>
+                                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                                    <td>232942</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">12382998</td>
+                                                    <td>10/30/18</td>
+                                                    <td>10/30/18</td>
+                                                    <td>$100.00</td>
+                                                    <td>$100.00</td>
+                                                    <td>Discount $100 if paid by 05/02/2020</td>
+                                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                                    <td>232942</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row step-margin pt-3">
+                                        <p class="invoices" style="text-align: left;padding-top: 2rem;margin-bottom: 0;">
+                                            Invoices selected: 0
+                                            <span class="span-medium" style="float:right;">
+                                                Total payment amount: $0.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-two" class="row pt-3 pb-3">
+                            <div class="col-md-8 p-3">
+                                <div class="container-fluid rectangle">
+                                    <img src="../CenturyBizTakeHome/Century Business Take Home/Step2.png" width="20" height="20">
+                                    <span class="step-padding">Select a payment method</span>
+                                    <div class="row pt-3 pt-2rem step-margin demi-text" style="display: block;">
+                                        <span class="border-payment-method bold">Pay By Credit Card</span>
+                                        <span>Pay with Bank Account</span>
+                                        <div class="line-58"></div>
+                                    </div>
+                                    <div class="row pt-3 pb-3 pt-2rem step-margin demi-text" style="display: block;">
+                                        <span class="blue-underline bold">Saved card</span>
+                                        <span>New Card</span>
+                                    </div>
+                                    <div class="row pt-3 pb-3 pt-2rem step-margin">
+                                        <span class="credit-card-font">Saved card*</span>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="../CenturyBizTakeHome/Century Business Take Home/Mastercard.png" width="20" height="20">ending in 2039, "main card"
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2rem mb-auto step-margin">
+                                        <span class="credit-card-font">Security Code (CVV2/CVC)</span>
+                                        <div class="input-group">
+                                            <input type="text" class="smaller-text-field">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="step-three" class="col-md-4 p-3">
+                                <div class="container-fluid rectangle">
+                                    <img class="pr-3" src="../CenturyBizTakeHome/Century Business Take Home/Step3.png" width="20" height="20">
+                                    <span class="step-padding">Review payment summary</span>
+                                    <div class="row step-margin pt-5" style="display: block;">
+                                        <p class="invoices" style="text-align:left;">
+                                            # of invoices selected:
+                                            <span style="float:right;">
+                                                0
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="row step-margin" style="display: block;">
+                                        <p class="invoices" style="text-align:left;">
+                                            invoice payment amount:
+                                            <span style="float:right;">
+                                                $0.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="row step-margin pb-5" style="display: block;">
+                                        <p class="invoices" style="text-align:left;">
+                                            3% card convenience fee:
+                                            <span style="float:right;">
+                                                $0.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="line-57 step-margin"></div>
+                                    <div class="row pt-3 step-margin" style="display: block;">
+                                        <p class="span-medium" style="text-align:left;">
+                                            Total payment amount:
+                                            <span class="span-medium" style="float:right;">
+                                                $0.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="d-grid col-12 step-margin">
+                                        <button class="btn btn-primary" type="button">Pay now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pay-now-mobile" class="d-grid gap-2 col-6 mx-auto">
+                            <button  id="pay-now-mobile" class="btn btn-primary" type="button">Pay now</button>
+                        </div>
+                    </main>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="../CenturyBizTakeHome/responsive-sidebar-menu.js"></script>
+    </body>
+</html>
